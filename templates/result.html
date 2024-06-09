@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output_styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Detection Result</h1>
+        <div class="image-container">
+            <img src="{{ image_url }}" alt="Result Image" style="height: 600px; width: 800px;">
+        </div>
+        <a href="/" class="button">Upload Another Image</a>
+    </div>
+</body>
+</html>
