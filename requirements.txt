@@ -1,3 +1,9 @@
+Flask==2.0.1
+requests==2.25.1
+Pillow==8.2.0
+azure-storage-blob==12.8.1
+gunicorn==20.1.0
+
 absl-py @ file:///C:/b/abs_d3cv5rzljl/croot/absl-py_1686852506854/work
 aiohttp @ file:///C:/b/abs_27h_1rpxgd/croot/aiohttp_1707342354614/work
 aiosignal @ file:///tmp/build/80754af9/aiosignal_1637843061372/work
