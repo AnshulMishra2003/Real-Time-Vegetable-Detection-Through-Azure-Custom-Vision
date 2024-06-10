@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1551ef82-4c4a-4346-b363-d8df443bc281/resourceGroups/Object_detection/providers/Microsoft.Web/sites/Object-Detection-Web-App",
+    "appService.deploySubpath": "."
+}
