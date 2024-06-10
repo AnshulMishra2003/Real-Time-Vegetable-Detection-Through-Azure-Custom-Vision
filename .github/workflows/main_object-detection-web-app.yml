@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - object-detection-web-app
+name: Build and deploy Python app to Azure Web App - Object-Detection-Web-App
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_113DAC0537474A96BA1903FA9DB0407A }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_44AB59D15D204ECD9C0CFA8ED996AB9E }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_AC8475DAA11B4E289A61E1C2ECF25126 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_1CF54C4B673F4E90866868D1C64427C4 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0D0A60E541FD46D295138A0236E2C674 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_77367ECF331F4B809BB3DDE46E0F7C47 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'object-detection-web-app'
+          app-name: 'Object-Detection-Web-App'
           slot-name: 'Production'
           
