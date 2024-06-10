@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - Object-Detection-Web-App
+name: Build and deploy Python app to Azure Web App - object-detection-web-app
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python version
         uses: actions/setup-python@v1
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Create and start virtual environment
         run: |
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_86541A9F40C945129EF5397E4F9E1C20 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_25F0F71888CE4937A9560C53CD1F4F1B }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_DBF83D1B0D7C4D17AA294F1E9DE33827 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_113DAC0537474A96BA1903FA9DB0407A }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_44AB59D15D204ECD9C0CFA8ED996AB9E }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_AC8475DAA11B4E289A61E1C2ECF25126 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'Object-Detection-Web-App'
+          app-name: 'object-detection-web-app'
           slot-name: 'Production'
           
