@@ -75,6 +75,10 @@ def index():
 
             return render_template('result.html', image_url=blob_url_with_name)
     return render_template('index.html')
-
+    
+@app.route('/health')
+def health_check():
+    return "OK", 200
+    
 if __name__ == '__main__':
     app.run(debug=True)
