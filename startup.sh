@@ -7,4 +7,4 @@ apt-get update
 apt-get install -y libjpeg-dev
 
 # Run the gunicorn server
-exec gunicorn --bind 0.0.0.0:8000 app:app
+gunicorn --bind 0.0.0.0:8000 app:app
