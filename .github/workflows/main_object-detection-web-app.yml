@@ -1,3 +1,7 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+# More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
+
 name: Build and deploy Python app to Azure Web App - Object-Detection-Web-App
 
 on:
@@ -28,25 +32,19 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
-
-      - name: Prepare deployment content
-        run: |
-          cp requirements.txt ./artifact/
-          cp app.py ./artifact/
-          # Include other necessary files for deployment here
-          echo '#!/bin/bash' > artifact/startup.sh
-          echo 'apt-get update && apt-get install -y libjpeg62 libjpeg62-dev' >> artifact/startup.sh
-          echo 'gunicorn --bind 0.0.0.0:8000 app:app' >> artifact/startup.sh
-          chmod +x artifact/startup.sh
+        
+      # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment
-        run: zip release.zip artifact/* -r
+        run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v3
         with:
           name: python-app
-          path: release.zip
+          path: |
+            release.zip
+            !venv/
 
   deploy:
     runs-on: ubuntu-latest
@@ -66,17 +64,19 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
 
+      
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_1CF54C4B673F4E90866868D1C64427C4 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0D0A60E541FD46D295138A0236E2C674 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_77367ECF331F4B809BB3DDE46E0F7C47 }}
 
-      - name: Deploy to Azure Web App
+      - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
           app-name: 'Object-Detection-Web-App'
           slot-name: 'Production'
-          startup-command: '/home/site/wwwroot/artifact/startup.sh'
+          startup-command: 'gunicorn --bind 0.0.0.0:8000 app:app'
+          
