@@ -10,6 +10,11 @@ The Vegetable Detection project is a web application that utilizes machine learn
 - View prediction results with confidence scores.
 - Simple and intuitive web interface.
 - Pre-trained model for quick and accurate predictions.
+- 
+## Project Demo Video URL- 
+-Please use Handset for proper voice
+
+https://1drv.ms/v/s!Ah7ppCYY5ElhgYM0dmq2pQKx798TMQ?e=9tObEY
 
 ## Project Structure
 
