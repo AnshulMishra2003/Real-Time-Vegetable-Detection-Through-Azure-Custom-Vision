@@ -55,7 +55,7 @@ def index():
 
                 # Load font
                 try:
-                    font = ImageFont.truetype("arial.ttf", size=int(lineWidth*2))
+                    font = ImageFont.truetype("arial.ttf", size=int(lineWidth*4))
                 except IOError:
                     font = ImageFont.load_default()
 
