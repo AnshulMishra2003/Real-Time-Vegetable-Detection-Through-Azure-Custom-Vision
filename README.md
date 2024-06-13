@@ -51,7 +51,7 @@ The Vegetable Detection project is a web application that utilizes machine learn
 
    python app.py
 
-2. Open your web browser and navigate to `object-detection-web-app.azurewebsites.net`.
+2. Open your web browser and navigate to  `https://object-detection-web-app-azure.azurewebsites.net/`.
 
 3. Upload an image of a vegetable to receive a prediction.
 
@@ -112,7 +112,7 @@ This application is deployed as an Azure Web App. Follow these steps to deploy y
 3. Set up the necessary environment variables for your Azure services (Custom Vision and Blob Storage) in the Web App settings.
 4. Deploy the application through the Azure Portal.
 
-Access the deployed application at: https://object-detection-web-app.azurewebsites.net/
+Access the deployed application at: https://object-detection-web-app-azure.azurewebsites.net/
 
 
 ![Screenshot 2024-06-13 125348](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/b1ccda53-8a85-4291-8adf-5832813cd1e2)
