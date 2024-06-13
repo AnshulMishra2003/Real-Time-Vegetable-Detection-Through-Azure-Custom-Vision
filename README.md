@@ -31,7 +31,7 @@ The Vegetable Detection project is a web application that utilizes machine learn
 
 1. Clone the repository:
 
-   git clone https://github.com/yourusername/vegetable-detection.git
+   git clone https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision.git
    cd vegetable-detection
 
 
