@@ -114,6 +114,15 @@ This application is deployed as an Azure Web App. Follow these steps to deploy y
 
 Access the deployed application at: https://object-detection-web-app.azurewebsites.net/
 
+
+![Screenshot 2024-06-13 125348](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/b1ccda53-8a85-4291-8adf-5832813cd1e2)
+
+## Output
+
+
+![image](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/ad25993b-93a5-4ea0-b476-b0012895ca00)
+
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
@@ -127,6 +136,42 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - This project was inspired by the need for quick and accurate vegetable identification.
 - Thanks to the contributors and the open-source community for their support and contributions.
 
-```
+## Screenshot Related To Project
 
-Feel free to adjust any sections or add additional details as necessary. If there are any specific aspects of the project you would like to highlight or additional instructions needed for setup, let me know and I can update the `README.md` accordingly.
+![Screenshot 2024-06-13 124239](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/4c719af7-ea87-48d5-ba40-5b9f4c8bf80c)
+
+
+![Screenshot 2024-06-13 124428](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/26638ac5-2cdc-4c3c-8950-7c44a4fa66e0)
+
+
+![Screenshot 2024-06-13 124509](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/ae066f12-69ac-4ea2-a47c-2cd1fc6dc27e)
+
+
+![Screenshot 2024-06-13 124641](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/aa63d35a-4111-42c8-a1e3-7b516a751e75)
+
+
+![Screenshot 2024-06-13 124608](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/1dacad78-3aae-4b22-85f1-fa5bd86af9c8)
+
+
+![Screenshot 2024-06-13 124719](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/33050ec6-8be7-439d-8a9a-141aa24daa69)
+
+
+![Screenshot 2024-06-13 124719](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/f5bd1369-3a94-4782-9c09-5bfa7dee4489)
+
+
+![Screenshot 2024-06-13 124908](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/b6f6c97b-ef61-4cc1-b6ab-9a83e92cef61)
+
+
+
+![Screenshot 2024-06-13 124951](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/3808a390-5361-43d4-8909-6c55b4b49801)
+
+
+![Screenshot 2024-06-13 125025](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/d0df60fc-7d36-41c5-b327-02b248fe21ca)
+
+
+![Screenshot 2024-06-13 125211](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/3009324e-e092-4e7f-8e88-f72d5b5301a5)
+
+
+![Screenshot 2024-06-13 125122](https://github.com/AnshulMishra2003/Real-Time-Vegetable-Detection-Through-Azure-Custom-Vision/assets/105056686/9046ce6e-dedb-4559-8c3e-31d1b645a02a)
+
+
